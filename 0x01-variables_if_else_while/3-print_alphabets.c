@@ -9,19 +9,13 @@
 
 int main(void)
 {
-	int ch = 'a';
-	int CH = 'A';
+	char low;
 
-	while (ch <= 'z')
-	{
-		putchar(ch);
-		ch++;
-	}
-	while (CH <= 'Z')
-	{
-		putchar(CH);
-		CH++;
-	}
-       	putchar('\n');
+	for (low = 'a'; low <= 'z'; low++)
+		putchar(low);
+	for (low = 'A'; low <= 'Z'; low++)
+		putchar(low);
+	putchar('\n');
+
 	return (0);
 }
